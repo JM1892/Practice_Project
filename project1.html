@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+            background: url('https://static.vecteezy.com/system/resources/thumbnails/003/557/256/small_2x/abstract-blue-and-orange-wave-business-background-free-vector.jpg');
+            background-size: cover;
+        }
+        section .left-box{
+            width: 50%;
+            height: 100%;
+            float: left;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        section .left-box .content{
+            color: #fff;
+            background:rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            transition: .5s;
+        }
+        section .left-box .content:hover{
+            background: #e91e63;
+        }
+        section .left-box .content h1{
+            margin: 0;
+            padding: 0;
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+        section .left-box .content p{
+            margin: 10px, 0, 0;
+            padding: 0;
+        }
+        section .event{
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            float: right;
+            box-sizing: border-box;
+        }
+        section .event ul{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        section .event ul li{
+            list-style: none;
+            background: #fff;
+            box-sizing: border-box;
+            height: 200px;
+            margin: 15px 0;
+        }
+        section .event ul li .time{
+            position: relative;
+            padding: 20px;
+            background: #262626;
+            box-sizing: border-box;
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+        }
+        section .event ul li:hover .time{
+            background:#e91e63;
+        }
+        section .event ul li .time h2{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 60px;
+            line-height: 30px;
+        }
+        section .event ul li .time h2 span{
+            font-size: 30px;
+        }
+        section .event ul li .details{
+            padding: 20px;
+            background: #fff;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+        section .event ul li .details h3{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+        }
+        section .event ul li .detalis p{
+            position:relative;
+            padding: 0;
+            margin: 10px, 0, 0;
+            font-size: 16px;
+        }
+        section .event ul li a{
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1.5px solid #262626;
+            margin-top: 8px;
+            font-size: 18px;
+            transition: .5s;
+        }
+        section .event ul li a:hover{
+            background-color: #e91e63;
+            color: #fff;
+            border-color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="left-box">
+            <div class="content">
+                <h1>EVENTS AND SHOWS</h1>
+                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi porro placeat! Distinctio illum adipisci voluptate exercitationem tenetur asperiores laboriosam maiores error, sit, nobis, vitae maxime impedit totam voluptas itaque!
+                A quia ut, distinctio quibusdam pariatur officiis reiciendis illum aliquam fugiat voluptas numquam culpa impedit possimus eligendi! Voluptates maiores sequi repellendus necessitatibus voluptate ea non dolore eius. Nesciunt, voluptas debitis.</P>
+            </div>
+        </div>
+        <div class="event">
+            <ul>
+                <li>
+                    <div class="time">
+                        <h2>
+                            12<br><span>October</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>Where Event happing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsa, at cum quia facere obcaecati id totam eaque iste sequi qui aut cupiditate, similique libero soluta laboriosam voluptatum et eius.</p>
+                        <a href="#">view Details...</a>
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+                <li>
+                    <div class="time">
+                        <h2>
+                            22<br><span>October</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>Where Event happing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsa, at cum quia facere obcaecati id totam eaque iste sequi qui aut cupiditate, similique libero soluta laboriosam voluptatum et eius.</p>
+                        <a href="#">view Details...</a>
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+                <li>
+                    <div class="time">
+                        <h2>
+                            02<br><span>November</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>Where Event happing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsa, at cum quia facere obcaecati id totam eaque iste sequi qui aut cupiditate, similique libero soluta laboriosam voluptatum et eius.</p>
+                        <a href="#">view Details...</a>
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+</body>
+</html>
